@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta name="description" content="Dan McCarthy's Project 13 file for CAPP 30370.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dan McCarthy | Project 13</title>
+		<style>
+			#box {
+				margin:2em;
+				width:250px;
+			  	height:250px;
+				background-color:orange;}
+		
+		</style>
+		</head>
+		
+		<body>
+			
+			<h2>1. Alert Button</h2>
+			<button id="alert">Alert</button>
+			<script>
+				document.getElementById('alert').addEventListener("click", function() {
+					alert('You just clicked a JavaScript button.');
+				});
+			</script>
+			
+			<h2>2. Prompt Button</h2>
+			<button id="prompt" >Prompt</button>
+			<script>
+				document.getElementById('prompt').addEventListener("click", function () {
+					var name=prompt("Please enter your name.");
+					for (i = 0; i < 5; i++) {
+						console.log(name);
+					}
+				});
+			</script>
+			
+			<h2>3. Color Array</h2>
+			<div id="colors"></div>
+			<script>
+				var rainbowcolors = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
+				for (i = 0; i < rainbowcolors.length; i++) {
+					document.write(rainbowcolors[i]+"<br/>");
+				};				
+			</script>
+			
+			<h2>4. Mouse Events</h2>
+			<div id="box"></div>
+			<script>
+				var box = document.getElementById('box');
+				box.addEventListener("mouseover", function() {
+					console.log("Mouse entered the box.")
+				});
+				box.addEventListener("mouseout", function() {	
+					console.log("Mouse left the box.")
+				});
+			</script>
+			
+			<h2>5. Are the values equal?</h2>
+			<input type="text" id="first" placeholder="First">
+			<input type="text" id="second" placeholder="Second">
+			<button id="check">Check</button>
+			<script>
+				var check = document.getElementById("check");
+				check.addEventListener("click", function() {
+					if (document.getElementById("first").value == document.getElementById("second").value) {
+						alert("These values ARE equal!");
+					}
+					else {
+						alert("These values ARE NOT equal!");
+					};
+				});
+			</script>
+			
+			
+				
+			
+		</body>
+		
+	</html>	

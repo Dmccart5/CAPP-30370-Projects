@@ -1,0 +1,7 @@
+body {font-size:100%; font-family:sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {font-family:serif; color:green}
+
+blockquote {background-color:rgba(153,255,153,0.5);}
+
+img {float:right; border:4px; border-style:solid; border-color:#009900; margin-left:1em;}
